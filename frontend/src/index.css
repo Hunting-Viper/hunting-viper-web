@@ -204,3 +204,8 @@ input {
     border: 0.1rem #c0c0c0 solid;
     border-radius: 0.5rem;
 }
+
+.active {
+    color: #ff0000; /* This is the "red" color from your checkout steps */
+    font-weight: bold;
+}

@@ -7,6 +7,7 @@ import './App.css';
 import Orders from './Orders/Orders';
 import OrderDetail from './Orders/OrderDetail';
 import Payment from './Payment/Payment';
+import Fulfillment from './Fulfillment/fulfillment';
 
 function App() {
   const openMenu = () => {
@@ -38,6 +39,7 @@ const closeMenu = () => {
                 <Link to="/catalog">Catalog</Link>
                 <Link to="/orders">Orders</Link>
                 <Link to="/payment">Payment</Link>
+                <Link to="/fulfillment">Fulfillment</Link>
             </div>
         </header>
 
@@ -48,6 +50,7 @@ const closeMenu = () => {
               <Route path="/orders" element={<Orders />} />
               <Route path="/order/:id" element={<OrderDetail />} />
               <Route path="/payment" element={<Payment />} />
+              <Route path="/fulfillment" element={<Fulfillment/>} />
             </Routes>
         </main>
 
